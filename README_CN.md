@@ -1,4 +1,4 @@
-<h4 align="right"><strong><a href="https://github.com/Belen-Luo/learning/README.md">English</a></strong> | 中文</h4>
+<h4 align="right"><strong><a href="https://github.com/Belen-Luo/learning/blob/master/README.md">English</a></strong> | 中文</h4>
 
 # Learning
 
