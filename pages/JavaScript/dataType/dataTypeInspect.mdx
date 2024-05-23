@@ -1,0 +1,86 @@
+## typeof
+
+`typeof` 是一个一元操作符，用于返回一个值的数据类型。它是用来检测变量类型的常用工具。
+
+### 基础类型
+
+- 未定义的变量
+
+```js
+let x;
+console.log(typeof x); // "undefined"
+```
+
+- 数字
+
+```js
+console.log(typeof 18); // "number"
+```
+
+- 字符串
+
+```js
+console.log(typeof "Hello, Belen!"); // "string"
+```
+
+- 布尔值
+
+```js
+console.log(typeof true); // "boolean"
+```
+
+- Symbol
+
+```js
+const sym = Symbol("unique");
+console.log(typeof sym); // "symbol"
+```
+
+- BigInt
+
+```js
+const bigInt = 901234567890n;
+console.log(typeof bigInt); // "bigint"
+console.log(typeof BigInt(123123)); // "bigint"
+```
+
+### 引用类型
+
+- 对象
+
+```js
+const object = {
+  name: "Belen",
+  age: 18
+}
+console.log(typeof object); // "object"
+console.log(typeof /sds/); // "object"
+console.log(typeof new Set([1, 2, 3, 4, 5])); // "object"
+console.log(typeof new Date()); // "object"
+```
+
+- 数组
+
+```js
+const arr = [1, 2, 3]
+console.log(typeof arr); // "object"
+```
+
+- 函数
+
+```js
+function hello() {
+  console.log("Hello, Belen!");
+}
+console.log(typeof hello); // 输出: "function"
+console.log(typeof Date); // 输出: "function"
+console.log(typeof Set); // 输出: "function"
+```
+
+### 特殊的
+
+- 空对象引用/空指针
+
+```js
+console.log(typeof null); // "object"
+```

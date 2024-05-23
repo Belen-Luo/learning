@@ -3,5 +3,9 @@
     "type": "page",
     "title": "Learning",
     "display": "hidden"
+  },
+  "JavaScript": {
+    "title": "JavaScript",
+    "type": "page"
   }
 }
