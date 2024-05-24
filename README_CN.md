@@ -8,9 +8,24 @@ Learning 是一个用与记录自己的学习笔记的库。
 
 - [ ] `Javascript`
   - [ ] `Javascript 基础`
+    - [ ] `语法`
     - [ ] `数据类型`
-      - [ ] `数据类型`
+      - [x] `数据类型`
       - [x] `类型检测`
+      - [ ] `Number`
+      - [ ] `String`
+      - [ ] `Boolean`
+      - [ ] `Symbol`
+      - [ ] `BigInt`
+      - [ ] `Undefined`
+      - [ ] `Null`
+      - [ ] `Object`
+      - [ ] `Array`
+      - [ ] `function`
+    - [ ] `运算符`
+    - [ ] `函数`
+    - [ ] `内置对象`
+    - [ ] `保留字段`
   - [ ] `框架`
     - [ ] `Reactjs`
     - [ ] `Vuejs`
@@ -19,7 +34,6 @@ Learning 是一个用与记录自己的学习笔记的库。
 - [ ] `Nodejs`
 - [ ] `TypeScript`
 - [ ] `Git`
-  - [ ] `GitFlow`
 - [ ] `Move`
 - [ ] `Rust`
 - [ ] `Golang`

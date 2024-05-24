@@ -8,9 +8,24 @@ Learning is a library that you can use to record your study notes.
 
 - [ ] `Javascript`
   - [ ] `Javascript Base`
+    - [ ] `Grammar`
     - [ ] `Data Type`
-      - [ ] `Data Type`
+      - [x] `Data Type`
       - [x] `Type Checking`
+      - [ ] `Number`
+      - [ ] `String`
+      - [ ] `Boolean`
+      - [ ] `Symbol`
+      - [ ] `BigInt`
+      - [ ] `Undefined`
+      - [ ] `Null`
+      - [ ] `Object`
+      - [ ] `Array`
+      - [ ] `function`
+    - [ ] `function`
+    - [ ] `Operator`
+    - [ ] `Built-in object`
+    - [ ] `Reserved field`
   - [ ] `frame`
     - [ ] `Reactjs`
     - [ ] `Vuejs`
@@ -19,7 +34,6 @@ Learning is a library that you can use to record your study notes.
 - [ ] `Nodejs`
 - [ ] `TypeScript`
 - [ ] `Git`
-  - [ ] `GitFlow`
 - [ ] `Move`
 - [ ] `Rust`
 - [ ] `Golang`
