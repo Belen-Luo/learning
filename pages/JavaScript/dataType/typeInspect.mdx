@@ -1,6 +1,8 @@
 ## typeof
 
-`typeof` 是一个一元操作符，用于返回一个值的数据类型。它是用来检测变量类型的常用工具。
+`typeof` 是一个一元操作符，用于返回一个值的数据类型。它是用来检测变量类型的常用工具。<br />
+
+复杂对象类型：typeof 对于对象、数组、null 等复杂类型的结果是 object，无法区分具体类型。
 
 ### 基础类型
 
@@ -83,4 +85,22 @@ console.log(typeof Set); // 输出: "function"
 
 ```js
 console.log(typeof null); // "object"
+```
+
+## instanceof
+
+`instanceof` 可以判断一个对象是否是某个构造函数的实例。它通过检查对象的原型链来确定这一点。
+
+判断对象类型
+
+```js
+function Car(make, model) {
+    this.make = make;
+    this.model = model;
+}
+
+const myCar = new Car('Toyota', 'Corolla');
+console.log(myCar instanceof Car); // 输出: true
+console.log([] instanceof Array); // 输出: true
+console.log(new Date() instanceof Date); // 输出: true
 ```
