@@ -1,3 +1,5 @@
 {
-  "typeInspect": "类型检测"
+  "integers": "整型",
+  "bool": "布尔类型",
+  "address": "地址"
 }

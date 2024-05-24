@@ -7,5 +7,9 @@
   "JavaScript": {
     "title": "JavaScript",
     "type": "page"
+  },
+  "Move": {
+    "title": "Move",
+    "type": "page"
   }
 }

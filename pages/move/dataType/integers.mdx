@@ -1,0 +1,55 @@
+## Integers
+
+Move 支持五种无符号整数类型：u8、u32、u64、u128、u256。这些类型的值范围从 0 到最大值，最大值的具体取值取决于整数类型。
+
+|类型|描述|取值范围|
+|--|--|--|
+|u8|无符号 8位 整数|0 to 2<sup>8</sup> - 1|
+|u32|无符号 32位 整数|0 to 2<sup>32</sup> - 1|
+|u64|无符号 64位 整数|0 to 2<sup>64</sup> - 1|
+|u128|无符号 128位 整数|0 to 2<sup>128</sup> - 1|
+|u256|无符号 256位 整数|0 to 2<sup>256</sup> - 1|
+
+### 例子
+
+```move
+let age: u8 = 18;
+```
+
+如果未指定类型，编译器将尝试从使用字面值的上下文推断类型。如果无法推断类型，则默认为 `u64。
+
+```move
+let age = 18;
+```
+
+如果字面值太大，超出其指定的(或推断的)大小范围，则会报错。
+
+```move
+let age: u8 = 256; // Expected a literal of type 'u8', but the value is too large.
+```
+
+通过后缀定义
+
+```move
+let age = 18u8;
+```
+
+### 转换
+
+一种大小的整数类型可以转换为另一种大小的整数类型。
+整数是 Move 中唯一支持强制转换的类型。
+在强制转换的过程中，如果对于指定类型来说太大，则转换会中止。
+
+```move
+let a: u32 = 1;
+let b: u8 = a as u8;
+```
+
+```move
+let a: u32 = 256;
+let b: u8 = a as u8; // Test was not expected to error, but it gave an arithmetic error originating in the module package::module rooted here
+```
+
+### 所有权
+
+与语言内置的其他标量值一样，整数值是隐式可复制的，这意味着它们可以在没有明确指令如copy的情况下复制。
