@@ -8,6 +8,9 @@ Learning is a library that you can use to record your study notes.
 
 - [ ] `Javascript`
   - [ ] `Javascript Base`
+    - [ ] `Data Type`
+      - [ ] `Data Type`
+      - [x] `Type Checking`
   - [ ] `frame`
     - [ ] `Reactjs`
     - [ ] `Vuejs`

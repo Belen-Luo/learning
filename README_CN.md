@@ -8,6 +8,9 @@ Learning 是一个用与记录自己的学习笔记的库。
 
 - [ ] `Javascript`
   - [ ] `Javascript 基础`
+    - [ ] `数据类型`
+      - [ ] `数据类型`
+      - [x] `类型检测`
   - [ ] `框架`
     - [ ] `Reactjs`
     - [ ] `Vuejs`
