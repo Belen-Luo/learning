@@ -2,7 +2,7 @@
 
 `typeof` 是一个一元操作符，用于返回一个值的数据类型。它是用来检测变量类型的常用工具。<br />
 
-复杂对象类型：typeof 对于对象、数组、null 等复杂类型的结果是 object，无法区分具体类型。
+缺点：typeof 对于对象、数组、null 等复杂类型的结果是 object，无法区分具体类型。
 
 ### 基础类型
 
@@ -89,7 +89,8 @@ console.log(typeof null); // "object"
 
 ## instanceof
 
-`instanceof` 可以判断一个对象是否是某个构造函数的实例。它通过检查对象的原型链来确定这一点。
+`instanceof` 可以判断一个对象是否是某个构造函数的实例。它通过检查对象的原型链来确定这一点。<br />
+缺点：检查不了number、boolean、string类型，结果都是返回false
 
 判断对象类型
 
@@ -103,4 +104,44 @@ const myCar = new Car('Toyota', 'Corolla');
 console.log(myCar instanceof Car); // 输出: true
 console.log([] instanceof Array); // 输出: true
 console.log(new Date() instanceof Date); // 输出: true
+```
+
+## Object.prototype.toString.call
+
+`Object.prototype.toString.call` 可以准确的检查任何类型的数据
+
+缺点：
+1. 写法相对复杂。
+2. 虽然在大多数情况下性能差异可以忽略不计，但 Object.prototype.toString.call 相较于 typeof 可能会有稍微更高的性能开销，因为它涉及到更多的函数调用和字符串处理。
+
+```js
+// 判断数字
+Object.prototype.toString.call(123) // '[object Number]'
+
+// 判断字符串
+Object.prototype.toString.call('Belen') // '[object String]'
+
+// 判断布尔值
+Object.prototype.toString.call(true) // '[object Boolean]'
+
+// 判断唯一标识符
+Object.prototype.toString.call(Symbol('unique')) // '[object Symbol]'
+
+// 判断任意进度整数
+Object.prototype.toString.call(4740991n) // '[object BigInt]'
+
+// 判断未定义
+Object.prototype.toString.call(undefined) // '[object Undefined]'
+
+// 判断空引用
+Object.prototype.toString.call(null) // '[object Null]'
+
+// 判断Object对象
+Object.prototype.toString.call({ name: "Belen", age: 18 }) // '[object Object]'
+
+// 判断数组对象
+Object.prototype.toString.call([1, 2, 3]) // '[object Array]'
+
+// 判断函数对象
+Object.prototype.toString.call(function hello() {}) // '[object Function]'
 ```
